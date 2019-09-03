@@ -1,9 +1,4 @@
-import logging
 from string import Template
-
-# Set loggin level
-logging.basicConfig()
-logging.getLogger().setLevel(logging.DEBUG)
 
 # Create a list of names and emails from contacts.txt
 def get_contacts(filename):
@@ -19,3 +14,9 @@ def get_contacts(filename):
             logging.info(f'Emails are {emails}')
     return names, emails
 
+# Create message object using template string from message.txt
+def create_temp_obj(filename):
+    with open(filename, 'r', encoding='utf-8') as template_file:
+        template_file_content = template_file.read()
+
+    return Template(template_file_content)
