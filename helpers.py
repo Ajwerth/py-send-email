@@ -10,8 +10,6 @@ def get_contacts(filename):
             names.append(a_contact.split()[0])
             emails.append(a_contact.split()[1])
 
-            logging.info(f'Names are {names}')
-            logging.info(f'Emails are {emails}')
     return names, emails
 
 # Create message object using template string from message.txt
