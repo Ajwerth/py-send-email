@@ -3,7 +3,10 @@ Py email send, creates a list of specified names and emails addresses,
 and sends a pre drafted email to all the addresses in the list.
 
 ## Specifying Names and Emails
-The names and email addresses can be specified in the `contacts.txt` file. There can only be one contact per line, formatted with the **name** followed by a **space** and the **email address** 
+The names and email addresses can be specified in the `contacts.txt` file. 
+
+### Formatting
+One contact per line, with the **name** followed by a **space** and the **email address** 
 `name name@address.com`
 
 ## Specifying Message
