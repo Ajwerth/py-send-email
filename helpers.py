@@ -1,7 +1,9 @@
 from string import Template
 
-# Create a list of names and emails from contacts.txt
 def get_contacts(filename):
+    """ 
+    Return two lists on of names and one of addresses, these are gotten from contacts.txt
+    """
     names = []
     emails = []
 
@@ -12,8 +14,12 @@ def get_contacts(filename):
 
     return names, emails
 
-# Create message object using template string from message.txt
+
 def create_temp_obj(filename):
+    """
+    Create a template object from message.txt
+    """
+
     with open(filename, 'r', encoding='utf-8') as template_file:
         template_file_content = template_file.read()
 
