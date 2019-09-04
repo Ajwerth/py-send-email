@@ -3,4 +3,3 @@ Dear ${RECIPIENT},
 This is a test email sent to you using python.
 
 Thank you,
-${SENDER}
